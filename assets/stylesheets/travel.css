@@ -26,7 +26,7 @@ override our h1 style to have a font size of 32px
 */
 
 h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 /*
@@ -156,6 +156,7 @@ nav {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  text-decoration: none;
 }
 /*
  target the elements with the class of nav-link
@@ -169,7 +170,6 @@ nav {
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-  color: white;
 }
 /*
  target the links that are children of the header element
@@ -187,7 +187,7 @@ header a {
   - make the width 100%
 */
 table {
-  border: black solid 2px;
+  border: 2px solid black;
   border-collapse: collapse;
   width: 100%;
 }
@@ -198,7 +198,7 @@ table {
 tr,
 td,
 th {
-  border: black solid 2px;
+  border: 2px black solid;
 }
 /*
  target the th element 
@@ -214,7 +214,7 @@ th {
   - make the text color black
   - make the background color white
 */
-.travel-table {
+#travel-table {
   color: black;
   background-color: white;
 }
@@ -222,7 +222,7 @@ th {
  target the h3 element within the element with the id of travel-table 
   - center align the text
 */
-h3 .travel-table {
+#travel-table h3 {
   text-align: center;
 }
 /*
@@ -239,7 +239,7 @@ footer {
 /*
  target the element with the id of copyright and float it to the left
 */
-.copyright {
+#copyright {
   float: left;
 }
 /*
@@ -248,7 +248,7 @@ footer {
   - a top and bottom padding of 5px
   - a left and right padding of 15px
 */
-.social-links {
+#social-links {
   float: right;
   padding-top: 5px;
   padding-bottom: 15px;
@@ -257,3 +257,7 @@ footer {
  target the links (anchor <a> tags) inside the element with the id of social-links
   - make sure the text is white and there is no underline
 */
+#social-links a {
+  color: white;
+  text-decoration: none;
+}
