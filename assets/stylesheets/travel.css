@@ -91,7 +91,7 @@ target the element with the id of hero and set the following
 #hero {
   width: 100%;
   height: 450px;
-  background-attachment: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../images/travel_hero.jpg");
   background-image: fixed;
